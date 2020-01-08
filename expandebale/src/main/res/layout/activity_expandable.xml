@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".view.activity.Expandable">
+
+    <ExpandableListView
+        android:id="@+id/ev"
+        android:layout_weight="9"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"></ExpandableListView>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_height="80dp">
+            <CheckBox
+                android:id="@+id/ch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="全选"
+                android:textSize="30dp"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="30dp"
+                android:text="合计:"
+                android:layout_marginLeft="10dp"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="￥"
+                android:textSize="30dp"
+                android:id="@+id/price"
+                android:textColor="#ff0000"
+                />
+
+        </LinearLayout>
+        <Button
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:textColor="#ff0000"
+            android:id="@+id/bt"
+            android:layout_alignParentRight="true"
+            />
+    </RelativeLayout>
+
+</LinearLayout>
